@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Retro Forum</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <!-- daisyUi -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- custom style -->
+    <style type="text/tailwindcss">
+      @theme {
+        --color-clifford: #da373d;
+        --font-mulish: "Mulish", sans-serif;
+        --font-inter: "Inter", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!-- navbar -->
+      <nav class="container mx-auto py-6">
+        <div class="navbar">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+              >
+                <li><i class="fa-solid fa-house text-[#5c5c61]"></i></li>
+                <li>
+                  <i class="fa-solid fa-pen text-[#5c5c61]"></i>
+                </li>
+                <li><i class="fa-solid fa-user-plus text-[#5c5c61]"></i></li>
+                <li><i class="fa-regular fa-flag text-[#5c5c61]"></i></li>
+              </ul>
+            </div>
+            <a class="text-4xl font-black font-mulish text-[#12132D]">ReTro</a>
+          </div>
+          <div class="navbar-end">
+            <ul class="menu menu-horizontal px-1 hidden lg:flex">
+              <li><i class="fa-solid fa-house text-[#5c5c61]"></i></li>
+              <li>
+                <i class="fa-solid fa-pen text-[#5c5c61]"></i>
+              </li>
+              <li><i class="fa-solid fa-user-plus text-[#5c5c61]"></i></li>
+              <li><i class="fa-regular fa-flag text-[#5c5c61]"></i></li>
+            </ul>
+            <a class="btn btn-primary rounded-full">Sign In</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main></main>
+    <footer></footer>
+  </body>
+</html>
