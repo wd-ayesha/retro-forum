@@ -87,13 +87,13 @@
       </nav>
 
       <!-- banner -->
-      <div class="container mx-auto text-white lg:px-20 px-10 pt-12 pb-24">
+      <div class="container mx-auto text-white lg:px-20 px-10 pt-9 pb-24">
         <div
           class="hero min-h-screen bg-[url(/images/bgbanner.png)] bg-no-repeat bg-cover bg-[#12132D] rounded-2xl font-mulish"
         >
           <div class="hero-content flex-col lg:flex-row-reverse gap-10">
             <div class="bg-white rounded-xl shadow-md p-8 w-64 mx-auto">
-              <ul class="space-y-2 text-gray-700 font-medium text-xl ">
+              <ul class="space-y-2 text-gray-700 font-medium text-xl">
                 <li class="flex justify-between gap-2">
                   <span>Registered Users</span>
                   <span>01</span>
@@ -114,7 +114,7 @@
             </div>
             <div>
               <h1 class="text-6xl font-black">
-                Welcome to the <br>
+                Welcome to the <br />
                 <span
                   class="bg-gradient-to-r from-[#777BF8] to-[#333570] bg-clip-text text-transparent"
                   >ReTro</span
@@ -122,7 +122,8 @@
                 Forum
               </h1>
               <p class="py-6">
-                Share your favorite opinion and win and wp <br> forum coffee mug!
+                Share your favorite opinion and win and wp <br />
+                forum coffee mug!
               </p>
               <div
                 class="flex items-center bg-white rounded-full px-4 py-1 shadow-md w-max"
@@ -143,7 +144,56 @@
         </div>
       </div>
     </header>
-    <main></main>
+    <main>
+      <!-- discuss section -->
+      <section class="container mx-auto pb-24 lg:px-20 px-10">
+        <div class="px-4 max-w-7xl mx-auto">
+          <!-- Header -->
+          <div class="text-center mb-10">
+            <h2 class="text-2xl md:text-4xl font-black text-gray-800">
+              Let’s Discuss
+            </h2>
+            <p class="text-gray-500 text-sm md:text-lg max-w-xl mx-auto mt-3 font-inter">
+              Yes, you can run unit tests and view the results directly within
+              the app. The integrated testing features allow for a streamlined .
+            </p>
+          </div>
+
+          <!-- Discussion Card + Sidebar -->
+          <!-- Grid Container -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-6 font-mulish">
+  
+  <!-- Discussion Cards (col-span-2) -->
+  <div id="discussion-card" class="lg:col-span-2 space-y-4">
+    <!-- JS will insert cards here -->
+  </div>
+
+  <!-- Sidebar (1 column) -->
+  <div class="space-y-4">
+    <!-- Header -->
+    <div class="flex items-center justify-between px-2">
+      <h4 class="text-gray-700 font-semibold">Title</h4>
+      <span id="read-count" class="text-sm text-green-600 flex items-center gap-1">
+        <i class="fa-solid fa-check text-green-500"></i> Mark as read (0)
+      </span>
+    </div>
+
+    <!-- Sidebar Items Container -->
+    <div id="read-items-sidebar" class="space-y-2">
+      <!-- JS inserts read items here -->
+    </div>
+
+    <!-- Optional: Clear All Button -->
+    <div class="text-right pr-2">
+      <button onclick="clearAllReadItems()" class="text-red-500 text-sm underline">
+        Clear All
+      </button>
+    </div>
+  </div>
+</div>
+      </section>
+    </main>
     <footer></footer>
+    <script src="./script.js"></script>
   </body>
 </html>
