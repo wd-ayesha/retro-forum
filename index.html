@@ -38,7 +38,7 @@
   <body>
     <header>
       <!-- navbar -->
-      <nav class="container mx-auto py-6">
+      <nav class="container mx-auto py-6 lg:px-20 px-10">
         <div class="navbar">
           <div class="navbar-start">
             <div class="dropdown">
@@ -85,6 +85,63 @@
           </div>
         </div>
       </nav>
+
+      <!-- banner -->
+      <div class="container mx-auto text-white lg:px-20 px-10 pt-12 pb-24">
+        <div
+          class="hero min-h-screen bg-[url(/images/bgbanner.png)] bg-no-repeat bg-cover bg-[#12132D] rounded-2xl font-mulish"
+        >
+          <div class="hero-content flex-col lg:flex-row-reverse gap-10">
+            <div class="bg-white rounded-xl shadow-md p-8 w-64 mx-auto">
+              <ul class="space-y-2 text-gray-700 font-medium text-xl ">
+                <li class="flex justify-between gap-2">
+                  <span>Registered Users</span>
+                  <span>01</span>
+                </li>
+                <li class="flex justify-between">
+                  <span>Forum</span>
+                  <span>05</span>
+                </li>
+                <li class="flex justify-between">
+                  <span>Topics</span>
+                  <span>01</span>
+                </li>
+                <li class="flex justify-between">
+                  <span>Replies</span>
+                  <span>01</span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h1 class="text-6xl font-black">
+                Welcome to the <br>
+                <span
+                  class="bg-gradient-to-r from-[#777BF8] to-[#333570] bg-clip-text text-transparent"
+                  >ReTro</span
+                >
+                Forum
+              </h1>
+              <p class="py-6">
+                Share your favorite opinion and win and wp <br> forum coffee mug!
+              </p>
+              <div
+                class="flex items-center bg-white rounded-full px-4 py-1 shadow-md w-max"
+              >
+                <input
+                  type="text"
+                  placeholder="Search here anything"
+                  class="input border-none focus:outline-none w-48 text-sm placeholder-gray-400 bg-transparent"
+                />
+                <button
+                  class="btn btn-sm bg-indigo-400 hover:bg-indigo-500 text-white rounded-full px-4 ml-2"
+                >
+                  Search
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
     <main></main>
     <footer></footer>
